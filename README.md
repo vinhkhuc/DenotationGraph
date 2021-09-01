@@ -1,5 +1,10 @@
 # DenotationGraph
 
+## How to build
+```
+mvn clean package
+```
+
 In order to generate a new denotation graph from a set of image captions, you will need to modify `run.sh`. You will need to change `graph_name` to the name of your corpus. (If necessary, you can also change `corpus_dir` to the directory that contains your corpus directory, i.e. `/home/data/graph_corpora` if your image caption data is contained in `/home/data/graph_corpura/new_captions`. Otherwise, simply put the directory containing your caption data in `corpora`.
 
 Your `graph_name` should match the name of the directory containing your caption data (e.g. `mpe_test_corpus`). To start graph generation, your caption directory should contain one file, `[graph_name].spell`. This file is tab-delimited, and each line contains one caption ID followed by the corresponding caption. See `corpora/mpe_test_corpus/mpe_test_corpus.spell` for an example. The graph generation process assumes that caption IDs are formatted as `image_id#caption_idx`. Denotational similarities are computed based on shared images, so this information is important to the graph similarity computations. 

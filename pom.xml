@@ -12,11 +12,9 @@
         <repository>
             <id>CogcompSoftware</id>
             <name>CogcompSoftware</name>
-            <url>http://cogcomp.cs.illinois.edu/m2repo</url>
+            <url>http://cogcomp.org/m2repo</url>
         </repository>
     </repositories>
-
-
     <build>
         <plugins>
             <plugin>
@@ -77,7 +75,7 @@
             <version>4.12</version>
         </dependency>
         <dependency>
-            <groupId>sqlite4java</groupId>
+            <groupId>com.almworks.sqlite4java</groupId>
             <artifactId>sqlite4java</artifactId>
             <version>1.0.392</version>
         </dependency>
